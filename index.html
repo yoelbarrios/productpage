@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A13</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="a13-1.png" alt="" onclick="clickimg(this)">
+                    <img src="a13-2.png" alt="" onclick="clickimg(this)">
+                    <img src="a13-3.png" alt="" onclick="clickimg(this)">
+                    <img src="a13-4.png" alt="" onclick="clickimg(this)">
+                </div>
+                <div class="main-images">
+                    <img src="a13-1.png" alt="" id="imagebox">
+                </div>
+            </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Nuevo</p>
+                    <h2>Samsung galaxy A13</h2>
+                </div>
+                <div class="price-box">
+                    <p class="price">S/ 700</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit provident modi odio, vero sed, sapiente delectus libero quod nemo voluptatibus laudantium culpa repellendus magnam nisi ab ipsum nihil error odit?</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickimg(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src
+        }
+
+    </script>
+</body>
+</html>
